@@ -24,6 +24,7 @@
 
 	<link rel="stylesheet" href="css/main.min.css">
 
+
 </head>
 
 <body>
@@ -32,7 +33,7 @@
 		<div class="container">
 			<div class="header__in">
 				<div class="header__left">
-					<div class="logo"><a href=""><img src="img/logo.svg" alt="RadissonLogo"></a></div>
+					<div class="logo"><a href=""><img src="img/logo.png" alt="RadissonLogo"></a></div>
 					<div class="header__text"><span>Hotel Lead Conversion Survey</span></div>
 				</div>
 				<div class="header__date"><span></span></div>
@@ -40,238 +41,273 @@
 		</div>
 	</header>
 	<div class="main__content">
-		
-			<form action="" class="check-form" id="page2">
-					<div class="page__hover"></div>
-					<div class="form__container">
-							<div class="title-in">
-									<h2 class="title title2">
-										Fill out the form
-									</h2>
-								</div>
-								<div class="form-page">
-									<div class="form__in">
-										<input type="hidden" id="get-val" name="project_name" value="">
-										<input type="hidden" name="admin_email" value="gkukishek@gmail.com">
-										<input type="hidden" name="Type" value="500-1000">
-										<div class="form__item">
-											<label for="firsName">First name</label>
-											<input type="text" name="firsname" placeholder="First name" required>
-										</div>
-										<div class="form__item">
-											<label for="hotelname">Hotel name</label>
-											<input type="text" name="hotelname" placeholder="Hotel name" required>
-										</div>
-										<div class="form__item">
-											<label for="email">Email</label>
-											<input type="text" name="email" placeholder="Email" required>
-										</div>
-										<div class="form__item">
-											<label for="lastname">Last name</label>
-											<input type="text" name="lastname" placeholder="Last name" required>
-										</div>
-										<div class="form__item">
-											<label for="companyname">Company name</label>
-											<input type="text" name="companyname" placeholder="Company name" required>
-										</div>
-										<div class="form__item form__drop">
-											<div class="lable__line"><label for="file">Transaction confirmation</label><span
-													class="success-file">File
-													<span></span> uploaded successfully</span></div>
-											<label class="drop-file" for="file-select">
-												<span class="text">Drag JPEG / PDF / PNG
-													<br>
-													<br>
-													or
-												</span>
-												<span class="file-btn">Select file to upload</span>
-											</label>
-											<input type="file" name="file" id="file-select" required>
-										</div>
-									</div>
-								</div>
+
+		<div id="snow-animation-container"></div>
+
+
+		<form action="#" class="check-form" id="page2">
+
+			<div class="page__hover"></div>
+			<div class="form__container">
+				<div class="top__nav">
+					<a href="" class="step-back"><img src="img/next.svg" alt="">Back</a>
+					<button type="submit" href="" class="step-next">Send</button>
+				</div>
+				<div class="title-in">
+					<h2 class="title title2">
+						Fill out the form
+					</h2>
+				</div>
+				<div class="form-page">
+					<div class="form__in">
+						<input type="hidden" id="get-val" name="type" value="">
+						<input type="hidden" name="admin_email" value="gkukishek@gmail.com">
+						<input type="hidden" name="project_name" value="Radisson">
+						<div class="form__item">
+							<label for="firsName">First name</label>
+							<input type="text" id="name1" name="firsname" placeholder="First name" required>
+						</div>
+						<div class="form__item">
+							<label for="hotelname">Hotel name</label>
+							<input type="text" id="hotel" name="hotelname" placeholder="Hotel name" required>
+						</div>
+						<div class="form__item">
+							<label for="email">Email</label>
+							<input type="email" id="email"  name="email" placeholder="Email" required>
+						</div>
+						<div class="form__item">
+							<label for="lastname">Last name</label>
+							<input type="text" id="name2" name="lastname" placeholder="Last name" required>
+						</div>
+						<div class="form__item">
+							<label for="companyname">Company name</label>
+							<input type="text" id="company" name="companyname" placeholder="Company name" required>
+						</div>
+						<div class="form__item form__drop">
+							<div class="lable__line"><label for="file">Transaction confirmation</label><span class="success-file">File
+									<span></span> uploaded successfully</span></div>
+							<label class="drop-file" for="file-select">
+								<span class="text">Drag JPEG / PDF / PNG
+									<br>
+									<br>
+									or
+								</span>
+								<span class="file-btn">Select file to upload</span>
+							</label>
+							<input type="file" name="file" value="" id="file-select"
+								accept="image/jpeg,image/png,image/pdf">
+						</div>
 					</div>
-				</form>
+				</div>
+			</div>
+		</form>
 		<div class="container">
-			
-						<div class="main__in" id="page1" style="background-image: url('../img/chesnabg.png');">
-							<h2 class="title">
-								Hello! <br>
-								Choose a lead amount
-							</h2>
-							<div class="chesna__block" style="background-image: url('../img/chesna.png');">
 
-								<div class="chesna__item">
-									<div class="chesna__day">
-										<span class="chsena__number">6</span>
-										<span class="chsena__month">December</span>
-									</div>
-									<div class="choose__line">
-											<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-											<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-											<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-										</div>
-										<div class="chesna__winner">
-												<span></span>
-												<span></span>
-											</div>
-								</div>
-								<div class="chesna__item chesna__win">
-										<div class="chesna__day">
-											<span class="chsena__number">7</span>
-											<span class="chsena__month">December</span>
-										</div>
-										<div class="choose__line">
-												<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-												<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-												<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-											</div>
-										<div class="chesna__winner">
-											<span>Winner</span>
-											<span>Konstantin</span>
-										</div>
-									</div>
-
-									<div class="chesna__item chesna__moder">
-											<div class="chesna__day">
-												<span class="chsena__number">8</span>
-												<span class="chsena__month">December</span>
-											</div>
-											<div class="choose__line">
-													<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-													<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-													<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-												</div>
-											<div class="chesna__winner">
-												<span></span>
-												<span></span>
-											</div>
-										</div>
-
-										<div class="chesna__item chesna__hide">
-												<div class="chesna__day">
-													<span class="chsena__number">9</span>
-													<span class="chsena__month">December</span>
-												</div>
-												<div class="choose__line">
-														<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-														<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-														<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-													</div>
-													<div class="chesna__winner">
-															<span></span>
-															<span></span>
-														</div>
-											</div>
-											<div class="chesna__item chesna__hide">
-													<div class="chesna__day">
-														<span class="chsena__number">10</span>
-														<span class="chsena__month">December</span>
-													</div>
-													<div class="choose__line">
-															<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-															<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-															<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-														</div>
-														<div class="chesna__winner">
-																<span></span>
-																<span></span>
-															</div>
-												</div>
+			<div class="main__in" id="page1">
+				<h2 class="title">
+					Hello! <br>
+					Choose a lead amount
+				</h2>
+				<div class="chesna__block">
+					<div class="chesna__item">
+						<div class="chesna__day">
+							<span class="chsena__number">2</span>
+							<span class="chsena__month">December</span>
+						</div>
+						<div class="choose__line">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span></span>
 							</div>
 						</div>
-						<div class="main__in" id="page3" style="background-image: url('../img/chesnabg.png');">
-							<div class="title-in">
-								<h2 class="title">
-										<span>Anatoly</span>, congratulations, <br>
-										 here is your prize!
-								</h2>
-								
-								<div class="winner-prize">
-									<img src="img/prize.png" alt="">
-								</div>
-							</div>
-							<div class="chesna__block" >
-
-									<div class="chesna__item">
-										<div class="chesna__day">
-											<span class="chsena__number">6</span>
-											<span class="chsena__month">December</span>
-										</div>
-										<div class="choose__line">
-												<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-												<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-												<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-											</div>
-											<div class="chesna__winner">
-													<span></span>
-													<span></span>
-												</div>
-									</div>
-									<div class="chesna__item chesna__win">
-											<div class="chesna__day">
-												<span class="chsena__number">7</span>
-												<span class="chsena__month">December</span>
-											</div>
-											<div class="choose__line">
-													<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-													<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-													<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-												</div>
-											<div class="chesna__winner">
-												<span>Winner</span>
-												<span>Konstantin</span>
-											</div>
-										</div>
-	
-										<div class="chesna__item chesna__moder">
-												<div class="chesna__day">
-													<span class="chsena__number">8</span>
-													<span class="chsena__month">December</span>
-												</div>
-												<div class="choose__line">
-														<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-														<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-														<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-													</div>
-												<div class="chesna__winner">
-													<span></span>
-													<span></span>
-												</div>
-											</div>
-	
-											<div class="chesna__item">
-													<div class="chesna__day">
-														<span class="chsena__number">9</span>
-														<span class="chsena__month">December</span>
-													</div>
-													<div class="choose__line chesna__hide">
-															<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-															<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-															<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-														</div>
-														<div class="chesna__winner">
-																<span></span>
-																<span></span>
-															</div>
-												</div>
-												<div class="chesna__item chesna__hide">
-														<div class="chesna__day">
-															<span class="chsena__number">10</span>
-															<span class="chsena__month">December</span>
-														</div>
-														<div class="choose__line">
-																<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
-																<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
-																<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
-															</div>
-															<div class="chesna__winner">
-																	<span></span>
-																	<span></span>
-																</div>
-													</div>
-								</div>
+					</div>
+					<div class="chesna__item chesna__win">
+						<div class="chesna__day">
+							<span class="chsena__number">3</span>
+							<span class="chsena__month">December</span>
 						</div>
+						<div class="choose__line">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span>Konstantin Konstantin</span>
+							</div>
+							<div class="chesna__winner">
+								<span>Konstantin Konstantin</span>
+							</div>
+							<div class="chesna__winner">
+								<span>Konstantin Konstantin</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="chesna__item chesna__moder">
+						<div class="chesna__day">
+							<span class="chsena__number">4</span>
+							<span class="chsena__month">December</span>
+						</div>
+						<div class="choose__line">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="chesna__item chesna__hide">
+						<div class="chesna__day">
+							<span class="chsena__number">5</span>
+							<span class="chsena__month">December</span>
+						</div>
+						<div class="choose__line">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="chesna__item chesna__hide">
+						<div class="chesna__day">
+							<span class="chsena__number">6</span>
+							<span class="chsena__month">December</span>
+						</div>
+						<div class="choose__line">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="chesna__star"></div>
+					<div class="chesna-tree" style="background-image: url('../img/chesnanew.png');">
+						<div class="chesna__bell" style="background-image: url('../img/chesna-bell.png');">
+						</div>
+						<div class="box" style="background-image: url('../img/box.png');"></div>
+					</div>
+				</div>
+			</div>
+			<div class="main__in" id="page3">
+				<div class="title-in">
+					<h2 class="title">
+						<span class="get-name">Anatoly</span>, congratulations, <br>
+						here is your prize!
+					</h2>
+
+					<div class="winner-prize">
+						<img src="img/prize.png" alt="">
+					</div>
+				</div>
+				<div class="chesna__block" >
+
+					<div class="chesna__item">
+						<div class="chesna__day">
+							<span class="chsena__number">2</span>
+							<span class="chsena__month">December</span>
+						</div>
+						<div class="choose__line">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="chesna__item chesna__win">
+						<div class="chesna__day">
+							<span class="chsena__number">3</span>
+							<span class="chsena__month">December</span>
+						</div>
+						<div class="choose__line">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span>Konstantin Velikov</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="chesna__item chesna__moder">
+						<div class="chesna__day">
+							<span class="chsena__number">4</span>
+							<span class="chsena__month">December</span>
+						</div>
+						<div class="choose__line">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="chesna__item">
+						<div class="chesna__day">
+							<span class="chsena__number">5</span>
+							<span class="chsena__month">December</span>
+						</div>
+						<div class="choose__line chesna__hide">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="chesna__item chesna__hide">
+						<div class="chesna__day">
+							<span class="chsena__number">6</span>
+							<span class="chsena__month">December</span>
+						</div>
+						<div class="choose__line">
+							<lable class="btn" for="get-val" value="500€ - 1000€">500€ - 1000€</lable>
+							<lable class="btn" for="get-val" value="1000€ - 3000€">1000€ - 3000€</lable>
+							<lable class="btn" for="get-val" value="3000 and above">3000 and above</lable>
+						</div>
+						<div class="win__line">
+							<div class="chesna__winner">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="chesna__star"></div>
+					<div class="chesna-tree" style="background-image: url('../img/chesnanew.png');">
+						<div class="chesna__bell" style="background-image: url('../img/chesna-bell.png');">
+						</div>
+						<div class="box" style="background-image: url('../img/box.png');"></div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 	</div>
@@ -294,6 +330,7 @@
 
 
 	<script src="js/scripts.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
 </body>
 
